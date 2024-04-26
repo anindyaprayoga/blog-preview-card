@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: local("Figtree-VariableFont_wght"),
+      url("Figtree-VariableFont_wght.ttf");
+  }
+  
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    padding: 5rem 1rem;
+    font-family: Figtree;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 0;
+    }
+}
+
+.container {
+    max-width: 450px;
+    margin-inline: auto;
+    background-color: #fff;
+    padding: 1.6rem;
+    border: 1px solid black;
+    border-radius: 1.6rem;
+    box-shadow: 10px 10px 0px black;
+}
+
+.container div:first-child img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.container div:nth-child(2) h2 {
+    display: inline-block;
+    background-color: hsl(47, 88%, 63%);
+    font-size: 1rem;
+    padding: 3px 8px;
+    margin: 1.5rem 0 1rem;
+    border-radius: 3px;
+}
+
+.container div:nth-child(2) p.published-at{
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.container div:nth-child(2) h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.container div:nth-child(2) h1:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.container div:nth-child(2) p {
+    font-size: 1.28rem;
+    color: #555;
+    margin-bottom: 2rem;
+} 
+
+.container div:nth-child(2) ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container div:nth-child(2) ul li img {
+    width: 2.5rem;
+}
+
+.container div:nth-child(2) ul li:nth-child(2) {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; color: white; margin-top: 2rem;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
